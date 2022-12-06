@@ -1,4 +1,4 @@
-<div class="w-full overflow-hidden flex flex-nowrap text-center items-start text-red-900 font-bold" id="slider">
+<section class="w-full overflow-hidden flex flex-nowrap text-center items-start text-red-900 font-bold" id="slider">
     <div class="flex-none w-full flex flex-col items-center justify-center">
         <img src="https://picsum.photos/id/296/1000/350" class="object-cover w-full h-full">
         <p class="text-lg mt-4 md:text-2xl font-bo font-normal">
@@ -17,4 +17,4 @@
             Kathog Namnang Hosel Chholing Monastery
         </p>
     </div>
-</div>
+</section>

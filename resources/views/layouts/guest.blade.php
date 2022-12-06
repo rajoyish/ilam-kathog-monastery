@@ -19,9 +19,6 @@
     {{-- NAVIGATION --}}
     @include('layouts.guest-nav')
 
-    {{-- SLIDER --}}
-    @include('layouts.slider')
-
     <main>
         {{ $slot }}
     </main>
