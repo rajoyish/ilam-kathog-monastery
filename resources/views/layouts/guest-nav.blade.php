@@ -1,4 +1,4 @@
-<nav x-data="{ navOpen: false }" class="bg-blue-500  text-white">
+<nav x-data="{ navOpen: false }" class="bg-red-900  text-white">
     <div class="mx-auto max-w-6xl px-4">
         <div class="flex justify-between">
             <div class="flex space-x-4">

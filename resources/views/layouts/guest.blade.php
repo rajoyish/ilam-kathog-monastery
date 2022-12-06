@@ -13,7 +13,14 @@
 </head>
 
 <body class="font-sans antialiased text-xl">
+    {{-- SITE HEADER --}}
+    @include('layouts.site-header')
+
+    {{-- NAVIGATION --}}
     @include('layouts.guest-nav')
+
+    {{-- SLIDER --}}
+    @include('layouts.slider')
 
     <main>
         {{ $slot }}
