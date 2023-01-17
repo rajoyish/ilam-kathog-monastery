@@ -18,6 +18,7 @@ class AlbumFactory extends Factory
     {
         return [
             'title' => fake()->catchPhrase(),
+            'cover' => fake()->imageUrl(),
             'description' => fake()->realText(),
         ];
     }

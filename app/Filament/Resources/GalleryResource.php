@@ -2,11 +2,10 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\AlbumResource\Pages;
-use App\Models\Album;
+use App\Filament\Resources\GalleryResource\Pages;
+use App\Models\Gallery;
 use Filament\Forms\Components\FileUpload;
-use Filament\Forms\Components\Textarea;
-use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Select;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
@@ -15,9 +14,9 @@ use Filament\Tables\Actions\DeleteAction;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 
-class AlbumResource extends Resource
+class GalleryResource extends Resource
 {
-    protected static ?string $model = Album::class;
+    protected static ?string $model = Gallery::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-collection';
 
@@ -25,23 +24,15 @@ class AlbumResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('title')
-                    ->required()
-                    ->autofocus()
-                    ->unique(ignoreRecord: true)
-                    ->placeholder('Enter an unique title for the album')
-                    ->columnSpanFull(),
-
-                FileUpload::make('cover')
+                FileUpload::make('photo')
                     ->required()
                     ->image()
                     ->maxSize(1024)
-                    ->directory('albums/covers'),
+                    ->directory('albums/photos'),
 
-                Textarea::make('description')
-                    ->required()
-                    ->placeholder('Enter a description of the album')
-                    ->columnSpanFull(),
+                Select::make('album_id')
+                    ->relationship('album', 'title'),
+
             ]);
     }
 
@@ -49,19 +40,16 @@ class AlbumResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('title')
+                ImageColumn::make('photo'),
+
+                TextColumn::make('album.title')
                     ->sortable()
                     ->searchable(),
 
-                TextColumn::make('description')
-                    ->limit(50),
-
-                ImageColumn::make('cover'),
-
-                TextColumn::make('galleries_count')
-                    ->counts('galleries')
-                    ->label('Photos count'),
-            ])->defaultSort('created_at', 'desc')
+                TextColumn::make('created_at')
+                    ->date()
+                    ->sortable(),
+            ])
             ->filters([
                 //
             ])
@@ -84,9 +72,9 @@ class AlbumResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListAlbums::route('/'),
-            'create' => Pages\CreateAlbum::route('/create'),
-            'edit' => Pages\EditAlbum::route('/{record}/edit'),
+            'index' => Pages\ListGalleries::route('/'),
+            'create' => Pages\CreateGallery::route('/create'),
+            'edit' => Pages\EditGallery::route('/{record}/edit'),
         ];
     }
 
