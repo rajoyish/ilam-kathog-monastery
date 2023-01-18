@@ -6,10 +6,10 @@
             ༄༅། །ཀཿཐོག་རྣམ་སྣང་འོད་གསལ་ཆོས་གླིང་།
         </h1>
         <p class="text-3xl font-bold md:text-5xl">
-            काथोग नमनङ होसेल छोलिङ गुम्बा
+            काथोग नाम्ननङ होइसल क्षोलिङ्ग गुम्बा
         </p>
         <p class="text-xl font-bold md:text-3xl">
-            Kathog Namnang Hosel Chholing Monastery
+            Kathog Namnang Hoesal Chhyoling Monastery
         </p>
     </div>
 </header>
