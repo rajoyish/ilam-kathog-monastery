@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AlbumController;
 use App\Http\Controllers\Guest\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/about-monastery', [HomeController::class, 'aboutMonastery'])->name('about-monastery');
+Route::get('/about-monastery', [HomeController::class, 'aboutMonastery'])
+    ->name('about-monastery');
 
-require __DIR__.'/auth.php';
+Route::resource('/albums', AlbumController::class);
+
+// require __DIR__ . '/auth.php';

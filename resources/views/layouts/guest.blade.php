@@ -12,7 +12,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="font-sans antialiased text-xl">
+<body class="font-sans antialiased text-xl bg-amber-200 min-h-screen">
     {{-- SITE HEADER --}}
     @include('layouts.site-header')
 

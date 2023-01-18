@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\AlbumResource\Pages;
 use App\Models\Album;
+use Camya\Filament\Forms\Components\TitleWithSlugInput;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
@@ -25,12 +26,20 @@ class AlbumResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('title')
-                    ->required()
-                    ->autofocus()
-                    ->unique(ignoreRecord: true)
-                    ->placeholder('Enter an unique title for the album')
+                TitleWithSlugInput::make(
+                    urlPath: '/albums/',
+                    fieldTitle: 'title',
+                    fieldSlug: 'slug',
+                    titleLabel: 'Title',
+                )
                     ->columnSpanFull(),
+
+                // TextInput::make('title')
+                //     ->required()
+                //     ->autofocus()
+                //     ->unique(ignoreRecord: true)
+                //     ->placeholder('Enter an unique title for the album')
+                //     ->columnSpanFull(),
 
                 FileUpload::make('cover')
                     ->required()

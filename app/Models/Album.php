@@ -10,7 +10,12 @@ class Album extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'description', 'cover'];
+    protected $fillable = ['title', 'slug', 'description', 'cover'];
+
+    public function getRouteKeyName(): string
+    {
+        return 'slug';
+    }
 
     public function galleries(): HasMany
     {
