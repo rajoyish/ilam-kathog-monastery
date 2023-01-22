@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Album;
-use App\Models\Gallery;
 use Illuminate\Http\Request;
 
 class AlbumController extends Controller
@@ -16,6 +15,7 @@ class AlbumController extends Controller
     public function index()
     {
         $albums = Album::with('galleries')
+            ->orderBy('created_at', 'desc')
             ->get();
 
         return view('albums.index', compact('albums'));
@@ -50,9 +50,7 @@ class AlbumController extends Controller
      */
     public function show(Album $album)
     {
-        $galleries = Gallery::where('album_id', $album);
-
-        return view('albums.album', compact('album', 'galleries'));
+        return view('albums.album', compact('album'));
     }
 
     /**

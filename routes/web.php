@@ -15,10 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/about-monastery', [HomeController::class, 'aboutMonastery'])
-    ->name('about-monastery');
+Route::controller(HomeController::class)->group(function () {
+    Route::get('/', 'index')->name('home');
+    Route::get('/', 'latestThreeAlbums');
+    Route::get('/about-monastery', 'aboutMonastery')->name('about-monastery');
+});
 
 Route::resource('/albums', AlbumController::class);
-
-// require __DIR__ . '/auth.php';

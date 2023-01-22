@@ -49,7 +49,7 @@ class GalleryResource extends Resource
                 TextColumn::make('created_at')
                     ->date()
                     ->sortable(),
-            ])
+            ])->defaultSort('created_at', 'desc')
             ->filters([
                 //
             ])
