@@ -3,15 +3,15 @@
         <div class="relative px-4 sm:px-6 lg:px-8">
             <div class="mt-6 prose prose-amber prose-xl text-black mx-auto min-w-[65%]">
                 <h2 class="leading-relaxed text-center text-red-900">
-                    काथोग नाम्ननङ होइसल क्षोलिङ्ग गुम्बा
+                    काथोग नाम्ननङ होसेल क्षोलिङ गुम्बा
                 </h2>
                 <ul role="list">
                     <li class="border-b border-b-red-500">सन्दकपुर-४ माबु, इलाम, प्रदेश नं. १, पूर्व नेपाल</li>
                 </ul>
                 <figure>
                     <img class="w-full rounded-lg" src="{{ asset('images/about-us-images/kathog-monastery.JPG') }}"
-                        alt="काथोग नाम्ननङ होइसल क्षोलिङ्ग गुम्बा">
-                    <figcaption>काथोग नाम्ननङ होइसल क्षोलिङ्ग गुम्बा</figcaption>
+                        alt="काथोग नाम्ननङ होसेल क्षोलिङ गुम्बा">
+                    <figcaption>काथोग नाम्ननङ होसेल क्षोलिङ गुम्बा</figcaption>
                 </figure>
                 <p>
                     वि.सं. २०४४ सालमा स्थापना भएर यस क्षेत्रको समस्त बौद्ध धर्मलम्वीहरू माझ विशेष धार्मिक, सामाजिक एवम्

@@ -6,7 +6,7 @@
             ༄༅། །ཀཿཐོག་རྣམ་སྣང་འོད་གསལ་ཆོས་གླིང་།
         </h1>
         <p class="text-3xl font-bold md:text-5xl">
-            काथोग नाम्ननङ होइसल क्षोलिङ्ग गुम्बा
+            काथोग नाम्ननङ होसेल क्षोलिङ गुम्बा
         </p>
         <p class="text-xl font-bold md:text-3xl">
             Kathog Namnang Hoesal Chhyoling Monastery

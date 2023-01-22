@@ -22,6 +22,6 @@
 
 </span>
 <x-guest-nav-item href="#">News</x-guest-nav-item>
-<x-guest-nav-item href="#">Gallery</x-guest-nav-item>
+<x-guest-nav-item :href="route('albums.index')" :active="request()->routeIs('albums.index')">Gallery</x-guest-nav-item>
 <x-guest-nav-item href="#">Donation</x-guest-nav-item>
 <x-guest-nav-item href="#">Contact</x-guest-nav-item>

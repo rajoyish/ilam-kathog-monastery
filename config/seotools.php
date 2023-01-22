@@ -10,11 +10,11 @@ return [
          * The default configurations to be used by the meta generator.
          */
         'defaults' => [
-            'title' => 'काथोग नाम्ननङ होइसल क्षोलिङ्ग गुम्बा | Kathog Namnang Hoesal Chhyoling Monastery', // set false to total remove
+            'title' => 'काथोग नाम्ननङ होसेल क्षोलिङ गुम्बा | Kathog Namnang Hoesal Chhyoling Monastery', // set false to total remove
             'titleBefore' => false, // Put defaults.title before page title, like 'It's Over 9000! - Dashboard'
-            'description' => '༄༅། །ཀཿཐོག་རྣམ་སྣང་འོད་གསལ་ཆོས་གླིང་།, काथोग नाम्ननङ होइसल क्षोलिङ्ग गुम्बा, Kathog Namnang Hoesal Chhyoling Monastery, सन्दकपुर-४ माबु, इलाम, प्रदेश नं. १, पूर्व नेपाल ', // set false to total remove
+            'description' => '༄༅། །ཀཿཐོག་རྣམ་སྣང་འོད་གསལ་ཆོས་གླིང་།, काथोग नाम्ननङ होसेल क्षोलिङ गुम्बा, Kathog Namnang Hoesal Chhyoling Monastery, सन्दकपुर-४ माबु, इलाम, प्रदेश नं. १, पूर्व नेपाल ', // set false to total remove
             'separator' => ' - ',
-            'keywords' => ['ཀཿཐོག་རྣམ་སྣང་འོད་གསལ་ཆོས་གླིང་།', 'काथोग नाम्ननङ होइसल क्षोलिङ्ग गुम्बा', 'Kathog Namnang Hoesal Chhyoling Monastery', 'सन्दकपुर-४ माबु', 'इलाम', 'प्रदेश नं. १', 'पूर्व नेपाल'],
+            'keywords' => ['ཀཿཐོག་རྣམ་སྣང་འོད་གསལ་ཆོས་གླིང་།', 'काथोग नाम्ननङ होसेल क्षोलिङ गुम्बा', 'Kathog Namnang Hoesal Chhyoling Monastery', 'सन्दकपुर-४ माबु', 'इलाम', 'प्रदेश नं. १', 'पूर्व नेपाल'],
             'canonical' => false, // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
             'robots' => false, // Set to 'all', 'none' or any combination of index/noindex and follow/nofollow
         ],
