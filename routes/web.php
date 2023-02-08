@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AlbumController;
 use App\Http\Controllers\Guest\HomeController;
+use App\Http\Controllers\IndexCommitteeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,5 +21,7 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/', 'latestThreeAlbums');
     Route::get('/about-monastery', 'aboutMonastery')->name('about-monastery');
 });
+
+Route::get('/committees', IndexCommitteeController::class)->name('committee');
 
 Route::resource('/albums', AlbumController::class);

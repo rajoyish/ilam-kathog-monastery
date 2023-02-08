@@ -15,7 +15,7 @@
         <x-guest-nav-sub-item :href="route('about-monastery')" :active="request()->routeIs('about-monastery')">
             About the Monastery
         </x-guest-nav-sub-item>
-        <x-guest-nav-sub-item href="#">
+        <x-guest-nav-sub-item :href="route('committee')" :active="request()->routeIs('committee')">
             Committee
         </x-guest-nav-sub-item>
     </nav>
