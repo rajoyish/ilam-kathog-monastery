@@ -17,6 +17,11 @@ class HomeController extends Controller
         return view('home.about-monastery');
     }
 
+    public function aboutChiefLama()
+    {
+        return view('home.about-chief-lama');
+    }
+
     public function latestThreeAlbums()
     {
         $albums = Album::with('galleries')

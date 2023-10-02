@@ -20,6 +20,7 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/', 'index')->name('home');
     Route::get('/', 'latestThreeAlbums');
     Route::get('/about-monastery', 'aboutMonastery')->name('about-monastery');
+    Route::get('/about-chief-lama', 'aboutChiefLama')->name('about-chief-lama');
 });
 
 Route::get('/committees', IndexCommitteeController::class)->name('committee');
